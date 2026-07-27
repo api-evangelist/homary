@@ -1,8 +1,26 @@
 aid: homary
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/homary.png
 name: Homary
-description: Homary is a company surfaced as a portfolio company of lightspeed-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Homary is a direct-to-consumer home furnishings retailer that sells furniture, faucets,
+  lighting, outdoor, kitchen, bath, storage and organization, decor and rugs sourced straight
+  from manufacturers to shoppers' homes. The brand positions itself around "affordable luxury"
+  home decor, operating an online storefront (homary.com) with category catalogs, deals, best
+  sellers, a design service, and a business-to-business program. Homary was surfaced through the
+  API Evangelist network as a portfolio company of Lightspeed Venture Partners. As a consumer
+  e-commerce brand it exposes only internal storefront endpoints (/hm-api/, /chart-api/, disallowed
+  in robots.txt) and publishes no public developer API, SDKs, or API documentation at this time.
 url: https://raw.githubusercontent.com/api-evangelist/homary/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +30,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Furniture
+- Home Decor
+- Lighting
+- E-commerce
+- Retail
+- Interior Design
+- Home Furnishings
 apis: []
+common:
+- type: DomainSecurity
+  url: security/homary-domain-security.yml
+- type: Website
+  url: https://www.homary.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
